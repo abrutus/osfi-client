@@ -1,0 +1,26 @@
+{
+    "name": "abrutus/osfi-client",
+        "description": "Client to consume the OSFI Api",
+        "license": "http://mit-license.org/",
+        "authors": [
+        {
+            "name": "Andre Brutus",
+            "email": "andre@brut.us"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/abrutus/osfi-client.git"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Osfi\\": "src/Osfi/"
+        }
+    }
+}
