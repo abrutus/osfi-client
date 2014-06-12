@@ -5,7 +5,7 @@ PHP client to consume the [OSFI Rest Api](https://github.com/abrutus/osfi).
 
 Sample usage
 ------------
-```
+```php
 <?php
 require_once "vendor/autoload.php";
 $client = new Osfi\Client;
