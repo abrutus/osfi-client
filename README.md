@@ -3,6 +3,15 @@ OSFI Client
 
 PHP client to consume the [OSFI Rest Api](https://github.com/abrutus/osfi).
 
+Installation
+------------
+Require the package in your `composer.json` file.
+```
+"require": {
+    "abrutus/osfi-client": "dev-master"
+},
+```
+
 Sample usage
 ------------
 ```php
