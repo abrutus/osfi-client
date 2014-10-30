@@ -28,10 +28,10 @@ class Client {
         $result = curl_exec($this->ch);
         if($result === FALSE) {
             if($errno = curl_errno($this->ch)) {
-                $error_message = curl_strerror($errno);
-                        return new Stub("cURL error ({$errno}): {$error_message}");
+                $error_message = curl_error($this->ch);
+                return new Stub("cURL error ({$errno}): {$error_message}");
             }
-            return new Stub("Failed CURL call with no error code");
+            return new Stub("Failed cURL call with no error code");
         }
         return json_decode($result);
     }
