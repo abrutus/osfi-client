@@ -21,7 +21,7 @@ class Client {
     }
     public function matchExactName($name) {
         $transliterated = preg_replace("/[^A-Za-z0-9 ]/", '', transliterator_transliterate("Any-Latin; Latin-ASCII; Upper()", $name));
-        $separated_by_lines = ltrim(join("-", array_filter(explode(" ", $transliterated)))
+        $separated_by_lines = ltrim(join("-", array_filter(explode(" ", $transliterated))));
         return $this->__request($separated_by_lines, "exactname/");
     }
 
