@@ -1,6 +1,7 @@
 {
     "name": "abrutus/osfi-client",
     "description": "Client to consume the OSFI Api",
+    "license": "Apache-2.0",
     "require": {
         "php": ">=5.3.0"
     },
